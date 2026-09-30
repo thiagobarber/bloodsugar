@@ -1,468 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Report: Natural Blood Sugar Support Method</title>
-    <meta name="description" content="Discover a simple daily habit that supports healthy blood sugar levels naturally. Watch the free presentation to learn more.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://bloodsugarblaster.com/index-vsl-ds24-1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Discover How to Control Your Blood Sugar Levels | Free Video Presentation</title>
+<meta name="description" content="Discover how a simple 5-second daily habit may help you support healthy blood sugar levels. Watch the free video presentation now." />
+<meta name="robots" content="index, follow" />
+<style>
+  :root{
+    --ink:#0d1321;
+    --ink-soft:#3b4559;
+    --muted:#6b7488;
+    --line:#e4e8ef;
+    --bg:#ffffff;
+    --bg-soft:#f6f8fb;
+    --red:#d92d20;
+    --red-dark:#a81e14;
+    --green:#12a150;
+    --green-dark:#0b7a3b;
+    --blue:#12294d;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(13,19,33,.10);
+    --maxw:820px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block}
+  a{color:var(--blue)}
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Special Report: Natural Blood Sugar Support Method">
-    <meta property="og:description" content="Discover a simple daily habit that supports healthy blood sugar levels naturally.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bloodsugarblaster.com/index-vsl-ds24-1">
+  /* ---------- Top bar ---------- */
+  .topbar{
+    border-bottom:1px solid var(--line);
+    background:#fff;
+    padding:12px 16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+  }
+  .brand{
+    display:flex;align-items:center;gap:10px;
+    font-weight:800;letter-spacing:-.02em;font-size:18px;color:var(--ink);
+    text-decoration:none;
+  }
+  .brand .dot{width:26px;height:26px;border-radius:50%;background:linear-gradient(140deg,#12a150,#0b7a3b);box-shadow:inset 0 0 0 4px rgba(255,255,255,.25)}
+  .brand small{display:block;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  /* ---------- Layout ---------- */
+  main{max-width:var(--maxw);margin:0 auto;padding:26px 18px 40px}
+  section{margin:0 0 30px}
 
-    <style>
-        :root {
-            --primary: #3a3b3a;
-            --secondary: #0f172a;
-            --accent: #22c55e;
-            --accent-hover: #16a34a;
-            --text-dark: #1e293b;
-            --text-light: #475569;
-            --bg-light: #f8fafc;
-            --white: #ffffff;
-            --border-color: #e2e8f0;
-            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        }
+  /* ---------- AIDA: ATTENTION ---------- */
+  .eyebrow{
+    display:inline-block;
+    background:#fdeceb;
+    color:var(--red-dark);
+    border:1px solid #f7cfcb;
+    font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+    padding:7px 12px;border-radius:999px;margin:0 0 16px;
+  }
+  h1{
+    font-size:clamp(28px,5.6vw,46px);
+    line-height:1.12;
+    letter-spacing:-.025em;
+    margin:0 0 14px;
+    font-weight:900;
+  }
+  h1 .hl{
+    background:linear-gradient(180deg,transparent 62%,#ffe08a 62%);
+    padding:0 2px;border-radius:3px;
+  }
+  .subhead{
+    font-size:clamp(17px,2.4vw,21px);
+    color:var(--ink-soft);
+    margin:0 0 10px;
+    font-weight:500;
+  }
+  .subhead strong{color:var(--ink)}
+  .kicker{font-size:15px;color:var(--muted);margin:0}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  /* ---------- INTEREST / video simulator ---------- */
+  .player{
+    position:relative;
+    aspect-ratio:16/9;
+    width:100%;
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 50% 10%, rgba(255,255,255,.14), transparent 60%),
+      linear-gradient(160deg,#131a2b 0%,#0a0f1c 55%,#05080f 100%);
+    border:1px solid #1d2740;
+    box-shadow:0 18px 50px rgba(5,8,15,.35);
+    cursor:pointer;
+    display:block;
+  }
+  .player .thumb{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;z-index:0;
+    filter:saturate(1.06) contrast(1.03);
+  }
+  .player .scrim{
+    position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(6,10,20,.46) 0%,rgba(6,10,20,.04) 34%,rgba(6,10,20,.82) 100%);
+  }
+  .headline-wrap{
+    position:absolute;left:16px;right:16px;bottom:64px;z-index:3;
+    display:flex;flex-direction:column;align-items:flex-start;gap:7px;
+    text-align:left;pointer-events:none;
+  }
+  .headline-wrap .tag{
+    background:#ffd400;color:#10192b;
+    font-size:clamp(9px,1.35vw,12px);font-weight:900;
+    letter-spacing:.14em;text-transform:uppercase;
+    padding:4px 9px;border-radius:5px;
+  }
+  .headline-wrap .big{
+    color:#fff;font-weight:900;letter-spacing:-.015em;
+    font-size:clamp(15px,2.35vw,25px);line-height:1.15;
+    text-transform:uppercase;
+    text-shadow:0 2px 4px rgba(0,0,0,.85),0 6px 18px rgba(0,0,0,.6);
+    max-width:78%;
+  }
+  .headline-wrap .big em{font-style:normal;color:#ffe45c}
+  .player .center{
+    position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:12px;text-align:center;padding:18px;z-index:2;
+  }
+  @media (min-width:720px){
+    .player .center{align-items:flex-start;padding-left:24px}
+    .play-btn{margin-left:0}
+  }
+  .play-btn{
+    width:86px;height:86px;border-radius:50%;
+    background:linear-gradient(140deg,#ff3b30,#c91d13);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 30px rgba(201,29,19,.45);
+    position:relative;
+    transition:transform .18s ease;
+  }
+  .player:hover .play-btn{transform:scale(1.06)}
+  .play-btn::before,.play-btn::after{
+    content:"";position:absolute;inset:0;border-radius:50%;
+    border:2px solid rgba(255,59,48,.55);
+    animation:ring 2.4s ease-out infinite;
+  }
+  .play-btn::after{animation-delay:1.2s}
+  @keyframes ring{0%{transform:scale(1);opacity:.75}100%{transform:scale(1.85);opacity:0}}
+  .play-btn svg{margin-left:6px}
+  .player .hint{color:#eaf1ff;font-size:clamp(10.5px,1.5vw,13px);font-weight:800;letter-spacing:.1em;text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+  .badge-live{
+    position:absolute;top:12px;left:12px;z-index:3;
+    background:rgba(217,45,32,.92);color:#fff;font-size:11px;font-weight:800;
+    letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;
+    display:flex;align-items:center;gap:6px;
+  }
+  .badge-live i{width:7px;height:7px;border-radius:50%;background:#fff;animation:blink 1.2s infinite}
+  @keyframes blink{50%{opacity:.25}}
+  .badge-hd{
+    position:absolute;top:12px;right:12px;z-index:3;
+    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    color:#e8eefc;font-size:11px;font-weight:800;letter-spacing:.08em;padding:4px 8px;border-radius:6px;
+  }
+  /* fake controls */
+  .controls{
+    position:absolute;left:0;right:0;bottom:0;z-index:3;
+    padding:10px 12px 12px;
+    background:linear-gradient(180deg,transparent,rgba(0,0,0,.72));
+  }
+  .bar{height:5px;border-radius:99px;background:rgba(255,255,255,.25);overflow:hidden}
+  .bar span{display:block;height:100%;width:14%;background:#ff3b30;border-radius:99px}
+  .controls .row{
+    display:flex;align-items:center;justify-content:space-between;
+    color:#dbe4f5;font-size:12px;font-weight:600;margin-top:8px;
+  }
+  .controls .row .left{display:flex;align-items:center;gap:10px}
+  .controls svg{opacity:.9}
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
+  /* loading overlay */
+  .loading{
+    position:absolute;inset:0;z-index:6;background:rgba(5,8,15,.92);
+    display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:20px;
+  }
+  .loading.on{display:flex}
+  .spinner{
+    width:44px;height:44px;border-radius:50%;
+    border:3px solid rgba(255,255,255,.22);border-top-color:#ff3b30;
+    animation:spin .8s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .loading p{color:#fff;font-weight:700;margin:0;font-size:15px}
 
-        /* Top Announcement Bar */
-        .top-bar {
-            background-color: var(--secondary);
-            color: var(--white);
-            text-align: center;
-            padding: 10px 16px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
+  /* ---------- CTA ---------- */
+  .cta-block{text-align:center;margin-top:22px}
+  .cta{
+    display:inline-flex;align-items:center;justify-content:center;gap:12px;
+    width:100%;max-width:560px;
+    background:linear-gradient(180deg,#16b85c,#0b7a3b);
+    color:#fff;text-decoration:none;
+    font-size:clamp(17px,2.6vw,22px);font-weight:900;letter-spacing:.02em;
+    text-transform:uppercase;
+    padding:20px 24px;border-radius:12px;
+    box-shadow:0 10px 0 #085c2c, 0 18px 34px rgba(11,122,59,.35);
+    transition:transform .12s ease, box-shadow .12s ease;
+    animation:breathe 2.6s ease-in-out infinite;
+    line-height:1.2;text-align:center;
+  }
+  @keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 0 #085c2c,0 22px 40px rgba(11,122,59,.4)}
+  .cta:active{transform:translateY(4px);box-shadow:0 5px 0 #085c2c}
+  .cta .tri{
+    width:0;height:0;flex:0 0 auto;
+    border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;
+  }
+  .cta-note{font-size:14px;color:var(--muted);margin:14px 0 0}
+  .cta-note strong{color:var(--ink-soft)}
+  .read-link{display:inline-block;margin-top:10px;font-size:14.5px;font-weight:700;color:var(--blue)}
 
-        .top-bar span {
-            color: #f59e0b;
-        }
+  /* ---------- Trust strip ---------- */
+  .trust{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+    margin-top:22px;
+  }
+  .trust div{
+    background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
+    padding:12px 10px;text-align:center;font-size:12.5px;font-weight:700;color:var(--ink-soft);line-height:1.35;
+  }
+  .trust b{display:block;font-size:15px;color:var(--ink)}
 
-        /* Container */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 24px 16px;
-        }
+  /* ---------- DESIRE ---------- */
+  .card{
+    border:1px solid var(--line);border-radius:var(--radius);
+    background:#fff;box-shadow:var(--shadow);
+    padding:24px 22px;
+  }
+  h2{
+    font-size:clamp(21px,3.4vw,28px);line-height:1.2;letter-spacing:-.02em;
+    margin:0 0 8px;font-weight:900;
+  }
+  h3{font-size:18px;margin:0 0 6px;font-weight:800}
+  .lead{margin:0 0 16px;color:var(--ink-soft)}
+  ul.checks{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+  ul.checks li{display:flex;gap:12px;align-items:flex-start;font-size:16.5px}
+  ul.checks .tick{
+    flex:0 0 auto;width:24px;height:24px;border-radius:50%;
+    background:#e7f7ee;border:1px solid #bfe9d1;color:var(--green-dark);
+    display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;margin-top:2px;
+  }
+  ul.checks .tick.no{background:#fdeceb;border-color:#f7cfcb;color:var(--red-dark)}
+  ul.checks li b{display:block}
+  ul.checks li span.txt{color:var(--ink-soft);font-size:15px}
 
-        /* Main Card */
-        .card {
-            background: var(--white);
-            border-radius: 16px;
-            padding: 32px 24px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border-color);
-        }
+  .quote{
+    border-left:4px solid #ffd166;background:#fffdf4;
+    padding:14px 16px;border-radius:0 10px 10px 0;margin:18px 0 0;
+    font-size:15.5px;color:var(--ink-soft);font-style:italic;
+  }
+  .quote b{font-style:normal;color:var(--ink)}
 
-        @media (min-width: 768px) {
-            .container {
-                padding: 40px 20px;
-            }
-            .card {
-                padding: 48px 40px;
-            }
-        }
+  /* ---------- ACTION ---------- */
+  .action{background:var(--blue);color:#fff;border-radius:var(--radius);padding:26px 22px;text-align:center}
+  .action h2{color:#fff}
+  .action p{color:#c8d5ea;margin:0 0 18px}
+  .action .cta{box-shadow:0 10px 0 #085c2c,0 18px 34px rgba(0,0,0,.35)}
+  .action .meta{font-size:13px;color:#9fb3d1;margin-top:14px;letter-spacing:.04em}
 
-        /* Editorial Subheading */
-        .category-tag {
-            display: inline-block;
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-            background: #f1f5f9;
-            padding: 4px 12px;
-            border-radius: 20px;
-        }
+  /* ---------- FAQ ---------- */
+  details{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:#fff;margin-bottom:10px}
+  details[open]{background:var(--bg-soft)}
+  summary{cursor:pointer;font-weight:800;font-size:15.5px}
+  details p{margin:10px 0 0;color:var(--ink-soft);font-size:15px}
 
-        /* Headlines */
-        h1.headline {
-            font-family: 'Merriweather', Georgia, serif;
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
-            line-height: 1.25;
-            color: var(--secondary);
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
+  /* ---------- Footer ---------- */
+  footer{background:#0b1220;color:#a9b6cc;padding:34px 18px 26px;font-size:13.5px}
+  .fwrap{max-width:var(--maxw);margin:0 auto}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
+  footer h4{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}
+  footer p{margin:0 0 10px;line-height:1.65}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+  footer button.link{
+    background:none;border:0;padding:0;color:#cfd9ea;font:inherit;font-weight:600;
+    cursor:pointer;text-align:left;text-decoration:underline;text-underline-offset:3px;
+  }
+  footer button.link:hover{color:#fff}
+  .disclosure{
+    border-top:1px solid #1e2a42;margin-top:24px;padding-top:18px;font-size:12px;color:#8a99b4;line-height:1.7;
+  }
+  .copy{border-top:1px solid #1e2a42;margin-top:16px;padding-top:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12px;color:#7f8ea9}
 
-        p.subheadline {
-            font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-            color: var(--text-light);
-            margin-bottom: 28px;
-            font-weight: 400;
-        }
+  /* ---------- Modal ---------- */
+  .modal{
+    position:fixed;inset:0;z-index:50;background:rgba(6,10,20,.72);
+    display:none;align-items:center;justify-content:center;padding:18px;
+  }
+  .modal.on{display:flex}
+  .modal .box{
+    background:#fff;color:var(--ink);border-radius:14px;max-width:720px;width:100%;
+    max-height:84vh;overflow:auto;padding:24px 22px;box-shadow:0 30px 70px rgba(0,0,0,.4);
+  }
+  .modal .box h3{font-size:20px;margin:0 0 12px}
+  .modal .box h4{font-size:15px;margin:18px 0 6px}
+  .modal .box p,.modal .box li{font-size:14.5px;color:var(--ink-soft)}
+  .modal .close{
+    position:sticky;top:0;float:right;background:#f1f4f8;border:1px solid var(--line);
+    border-radius:8px;width:34px;height:34px;font-size:18px;font-weight:800;color:var(--ink-soft);cursor:pointer;
+  }
 
-        /* Media Container */
-        .media-container {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 28px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            background-color: var(--secondary);
-            aspect-ratio: 16 / 9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-        .media-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .media-container:hover img {
-            transform: scale(1.02);
-        }
-
-        .play-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background: rgba(15, 23, 42, 0.85);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 30px rgba(0,0,0,0.3);
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-
-        .media-container:hover .play-overlay {
-            transform: translate(-50%, -50%) scale(1.1);
-            background: var(--accent);
-        }
-
-        .play-icon {
-            width: 0;
-            height: 0;
-            border-top: 14px solid transparent;
-            border-bottom: 14px solid transparent;
-            border-left: 22px solid var(--white);
-            margin-left: 5px;
-        }
-
-        /* Highlights/Bullets */
-        .bullet-list {
-            list-style: none;
-            margin-bottom: 32px;
-        }
-
-        .bullet-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 14px;
-            font-size: 1.05rem;
-            color: var(--text-dark);
-            font-weight: 500;
-        }
-
-        .bullet-icon {
-            flex-shrink: 0;
-            width: 22px;
-            height: 22px;
-            background-color: #dcfce7;
-            color: #166534;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 2px;
-        }
-
-        .bullet-icon svg {
-            width: 14px;
-            height: 14px;
-            stroke-width: 3;
-        }
-
-        /* CTA Button Area */
-        .cta-wrapper {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .btn-cta {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 20px 32px;
-            font-size: 1.25rem;
-            font-weight: 800;
-            color: var(--white);
-            background-color: var(--accent);
-            border: none;
-            border-radius: 12px;
-            text-decoration: none;
-            cursor: pointer;
-            box-shadow: 0 10px 20px -5px rgba(34, 197, 94, 0.4);
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .btn-cta:hover {
-            background-color: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 14px 24px -5px rgba(34, 197, 94, 0.5);
-        }
-
-        .btn-cta:active {
-            transform: translateY(0);
-        }
-
-        .cta-subtext {
-            font-size: 0.875rem;
-            color: var(--text-light);
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-        }
-
-        .cta-subtext svg {
-            width: 16px;
-            height: 16px;
-            fill: #64748b;
-        }
-
-        /* Trust Badges */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-            margin-top: 28px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border-color);
-            flex-wrap: wrap;
-        }
-
-        .trust-badge-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-            font-weight: 500;
-        }
-
-        .trust-badge-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--primary);
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            padding: 32px 16px;
-            background-color: #f1f5f9;
-            border-top: 1px solid var(--border-color);
-            color: #64748b;
-            font-size: 0.8rem;
-            line-height: 1.6;
-        }
-
-        .footer-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer-links {
-            margin-bottom: 16px;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: #64748b;
-            text-decoration: underline;
-        }
-
-        .footer-links a:hover {
-            color: var(--secondary);
-        }
-
-        .disclaimer {
-            margin-top: 16px;
-            font-size: 0.75rem;
-            color: #94a3b8;
-            text-align: justify;
-        }
-    </style>
+  @media (max-width:720px){
+    .fgrid{grid-template-columns:1fr}
+    .trust{grid-template-columns:1fr}
+    .trust div{text-align:left;display:flex;gap:10px;align-items:center}
+    .trust b{display:inline}
+    main{padding:18px 15px 32px}
+  }
+</style>
 </head>
 <body>
 
-    <!-- Top Announcement Header -->
-    <div class="top-bar">
-        <span>Special Report:</span> Health & Glucose Wellness Update for Adults 45+
+<!-- ===== Top bar ===== -->
+<header class="topbar">
+  <a class="brand" href="#watch">
+    <span class="dot" aria-hidden="true"></span>
+    <span>Blood Sugar Blaster
+      <small>Free video presentation</small>
+    </span>
+  </a>
+</header>
+
+<main>
+
+  <!-- ======================= A — ATTENTION ======================= -->
+  <section>
+    <p class="eyebrow">Attention: if you struggle with high blood sugar…</p>
+    <h1>Discover how to control your <span class="hl">blood sugar levels</span> — without starving yourself or living at the gym</h1>
+    <p class="subhead">
+      Find out how a simple <strong>5-second daily habit</strong> can help you support steady blood sugar levels
+      and feel more energetic again — starting today.
+    </p>
+    <p class="kicker">Free video presentation · No credit card required · Watch it while it's still online</p>
+  </section>
+
+  <!-- ======================= I — INTEREST (video simulator) ======================= -->
+  <section id="watch">
+    <a class="player"
+       href="https://bloodsugarblaster.com/index-vsl-ds24#aff=thiagobarber"
+       id="videoPlayer"
+       aria-label="Play the free video presentation">
+      <span class="badge-live"><i aria-hidden="true"></i> Playing now</span>
+      <span class="badge-hd">HD</span>
+
+      <img class="thumb" src="assets/player-thumb.jpg" alt="Man checking a healthy blood sugar reading at home" />
+      <span class="scrim" aria-hidden="true"></span>
+
+      <span class="center">
+        <span class="play-btn" aria-hidden="true">
+          <svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.5 15.3 2.6.6C1.6 0 0 .7 0 2v30c0 1.3 1.6 2 2.6 1.4l25.9-14.7c1-.6 1-2.1 0-2.7Z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="hint">Click to play the free presentation</span>
+      </span>
+
+      <span class="headline-wrap">
+        <span class="tag">Free video presentation</span>
+        <span class="big">The 5-second habit that helps <em>steady your blood sugar</em></span>
+      </span>
+
+      <span class="controls" aria-hidden="true">
+        <span class="bar"><span></span></span>
+        <span class="row">
+          <span class="left">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="#dbe4f5"><path d="M0 0h4v14H0zM8 0h4v14H8z"/></svg>
+            <span>00:00 / 12:47</span>
+          </span>
+          <span class="left">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="#dbe4f5"><path d="M7.5 2 4.2 5H1v4h3.2L7.5 12zM10 3.2a5 5 0 0 1 0 7.6l1 1.2a6.5 6.5 0 0 0 0-10z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="#dbe4f5"><path d="M1 1h3v12H1zM6 1h3v12H6zM11 1h3v12h-3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="#dbe4f5"><path d="M1 5h12L7 12z"/></svg>
+          </span>
+        </span>
+      </span>
+
+      <!-- simulated loading -->
+      <span class="loading" id="loading" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        <p id="loadingText">Preparing your video… please wait</p>
+      </span>
+    </a>
+
+    <!-- ======================= CTA (below the video) ======================= -->
+    <div class="cta-block">
+      <a class="cta" id="ctaButton" href="https://bloodsugarblaster.com/index-vsl-ds24#aff=thiagobarber">
+        <span class="tri" aria-hidden="true"></span> Watch Video
+      </a>
+      <p class="cta-note"><strong>100% free to watch.</strong> Sound on — the first 30 seconds are the most important.</p>
+      <a class="read-link" href="https://bloodsugarblaster.com/index-vsl-ds24#aff=thiagobarber">Prefer to read instead? Click here for the text version</a>
     </div>
 
-    <!-- Main Content Container -->
-    <main class="container">
-        <article class="card">
-            
-            <span class="category-tag">Natural Health Breakthrough</span>
+    <div class="trust">
+      <div><b>5 seconds</b> per day</div>
+      <div><b>100% natural</b> ingredients</div>
+      <div><b>Free</b> to watch today</div>
+    </div>
+  </section>
 
-            <h1 class="headline">Scientists Reveal A Simple 5-Second Morning Habit That Supports Healthy Blood Sugar Levels</h1>
+  <!-- ======================= I — INTEREST (details) ======================= -->
+  <section class="card">
+    <h2>What you'll discover inside this free presentation</h2>
+    <p class="lead">No hype, no impossible diets. Just the simple daily routine thousands of people are using to feel better after 40.</p>
+    <ul class="checks">
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>The 5-second morning habit</b> that supports healthy blood sugar levels — you can do it before your coffee is ready.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>The "silent" foods</b> that quietly spike your blood sugar — and the surprising swaps that keep your levels steady.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>Why willpower isn't the problem</b> — and what to focus on instead of counting every carb.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>How to support steady energy</b> so you're not crashing in the afternoon or dragging yourself to bed.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>A simple, budget-friendly routine</b> that fits into your normal day — no gym required.</span></li>
+    </ul>
+    <p class="quote">
+      <b>Important:</b> this presentation is educational and free to watch. It is not a substitute for medical care,
+      and it never asks you to stop any treatment you're already following.
+    </p>
+  </section>
 
-            <p class="subheadline">Over 34,000 adults are already using this daily, doctor-approved routine to boost natural energy, promote balanced glucose levels, and reclaim their vitality.</p>
+  <!-- ======================= D — DESIRE ======================= -->
+  <section class="card">
+    <h2>Imagine waking up and feeling in control again</h2>
+    <p class="lead">Steady numbers. Steady energy. No guessing at every meal.</p>
+    <ul class="checks">
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>Mornings without the dread</b> of checking your meter.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>Afternoons without the crash</b> — real energy to enjoy your family, your work, your life.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>Meals without the fear</b> — learn how to eat the foods you love in a smarter order.</span></li>
+      <li><span class="tick" aria-hidden="true">✓</span><span class="txt"><b>A routine you can actually keep</b> — because it takes seconds, not hours.</span></li>
+    </ul>
+    <ul class="checks" style="margin-top:16px">
+      <li><span class="tick no" aria-hidden="true">✕</span><span class="txt"><b>Not another starvation diet.</b></span></li>
+      <li><span class="tick no" aria-hidden="true">✕</span><span class="txt"><b>Not hours of exhausting exercise.</b></span></li>
+      <li><span class="tick no" aria-hidden="true">✕</span><span class="txt"><b>Not an expensive, complicated protocol.</b></span></li>
+    </ul>
+  </section>
 
-            <!-- Media Visual Teaser -->
-            <a href="https://bloodsugarblaster.com/index-vsl-ds24-1" class="media-container" aria-label="Watch the free presentation video">
-                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80" alt="Healthy adult enjoying active lifestyle" loading="lazy">
-                <div class="play-overlay">
-                    <div class="play-icon"></div>
-                </div>
-            </a>
+  <!-- ======================= A — ACTION ======================= -->
+  <section class="action">
+    <h2>Ready? Watch the free video now</h2>
+    <p>In the next few minutes you'll know exactly what the 5-second habit is — and how to start using it tomorrow morning.</p>
+    <a class="cta" href="https://bloodsugarblaster.com/index-vsl-ds24#aff=thiagobarber">
+      <span class="tri" aria-hidden="true"></span> Watch Video
+    </a>
+    <p class="meta">Free presentation · Takes less than 13 minutes · No sign-up needed</p>
+  </section>
 
-            <!-- Key Takeaways / Benefits -->
-            <ul class="bullet-list">
-                <li class="bullet-item">
-                    <div class="bullet-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    </div>
-                    <span><strong>100% Natural & Safe:</strong> Works naturally without restrictive diets or exhausting exercise routines.</span>
-                </li>
-                <li class="bullet-item">
-                    <div class="bullet-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    </div>
-                    <span><strong>Scientifically Supported:</strong> Based on recent clinical findings regarding glucose absorption and cellular vitality.</span>
-                </li>
-                <li class="bullet-item">
-                    <div class="bullet-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    </div>
-                    <span><strong>Fast & Easy Routine:</strong> Takes less than 10 seconds each morning from the comfort of your home.</span>
-                </li>
-            </ul>
+  <!-- ======================= FAQ ======================= -->
+  <section>
+    <h2>Frequently asked questions</h2>
+    <details open>
+      <summary>Is the video really free?</summary>
+      <p>Yes. The presentation is completely free to watch and you don't need to enter any payment information to see it.</p>
+    </details>
+    <details>
+      <summary>How long is the video?</summary>
+      <p>It runs about 13 minutes. Watch it with the sound on and give it your full attention — the key part is explained early on.</p>
+    </details>
+    <details>
+      <summary>Do I need to stop my current treatment?</summary>
+      <p>No. Nothing on this page should be used as a reason to change, stop or replace any medical treatment. Always talk to your doctor before making changes to your routine, diet or medication.</p>
+    </details>
+    <details>
+      <summary>Who is this for?</summary>
+      <p>Adults who want to understand blood sugar in plain English, especially people over 40 who are tired of feeling drained and confused about what to eat.</p>
+    </details>
+  </section>
 
-            <!-- Call to Action -->
-            <div class="cta-wrapper">
-                <a href="https://bloodsugarblaster.com/index-vsl-ds24-1" class="btn-cta" id="main-cta">
-                    Watch Free Video Presentation &rarr;
-                </a>
-                <p class="cta-subtext">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2zm0-10h2v8h-2z"/></svg>
-                    Click above to check if the video presentation is still available.
-                </p>
-            </div>
+</main>
 
-            <!-- Trust Badges -->
-            <div class="trust-badges">
-                <div class="trust-badge-item">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span>Secure Presentation</span>
-                </div>
-                <div class="trust-badge-item">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <span>Instant Free Access</span>
-                </div>
-                <div class="trust-badge-item">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span>No Subscription Required</span>
-                </div>
-            </div>
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="fwrap">
+    <div class="fgrid">
+      <div>
+        <h4>Information</h4>
+        <p><strong style="color:#fff">Blood Sugar Blaster — Free Video Presentation</strong></p>
+        <p>This page is an independent promotional page that presents an educational video about blood sugar support. It is intended for adults aged 18 and over.</p>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><button class="link" data-modal="privacy">Privacy Policy</button></li>
+          <li><button class="link" data-modal="terms">Terms of Use</button></li>
+          <li><button class="link" data-modal="disclaimer">Medical &amp; Earnings Disclaimer</button></li>
+          <li><button class="link" data-modal="cookies">Cookie Policy</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#watch" style="color:#cfd9ea;text-decoration:underline">Watch the video</a></li>
+          <li><button class="link" data-modal="contact">Contact &amp; Support</button></li>
+          <li><button class="link" data-modal="affiliate">Affiliate Disclosure</button></li>
+        </ul>
+      </div>
+    </div>
 
-        </article>
-    </main>
+    <div class="disclosure">
+      <p><strong style="color:#cfd9ea">Medical disclaimer:</strong> The content on this page is provided for general informational and educational purposes only and is not medical advice. Statements have not been evaluated by the Food and Drug Administration. No product mentioned is intended to diagnose, treat, cure or prevent any disease. Always consult a qualified healthcare professional before starting any supplement, diet or exercise program, and never stop or change prescribed medication without medical guidance. Individual results vary.</p>
+      <p><strong style="color:#cfd9ea">Advertising disclosure:</strong> This is a promotional page and the owner may receive compensation if you purchase a product through the links on this page. This helps support the free content provided here and does not increase the price you pay.</p>
+      <p><strong style="color:#cfd9ea">Results disclaimer:</strong> Testimonials or examples shown in the video are not typical and do not guarantee that you will achieve the same or similar results.</p>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-links">
-                <a href="https://bloodsugarblaster.com/index-vsl-ds24-1" target="_blank" rel="noopener">Privacy Policy</a>
-                <a href="https://bloodsugarblaster.com/index-vsl-ds24-1" target="_blank" rel="noopener">Terms of Service</a>
-                <a href="https://bloodsugarblaster.com/index-vsl-ds24-1" target="_blank" rel="noopener">Contact Support</a>
-            </div>
-            
-            <p>&copy; <span id="year"></span> Health Reports Online. All rights reserved.</p>
+    <div class="copy">
+      <span>© <span id="year">2026</span> Blood Sugar Blaster Presentation Page. All rights reserved.</span>
+      <span>Made for informational purposes only · English (US)</span>
+    </div>
+  </div>
+</footer>
 
-            <div class="disclaimer">
-                <strong>Google Ads & Healthcare Disclaimer:</strong> This site is not a part of the Google website or Google Inc. Additionally, This site is NOT endorsed by Google in any way. GOOGLE is a trademark of GOOGLE, Inc.<br><br>
-                The information provided on this page is for informational purposes only and is not intended as a substitute for advice from your physician or other health care professional. You should not use the information on this site for diagnosis or treatment of any health problem or for prescription of any medication or other treatment. Always consult with a qualified healthcare professional before starting any diet, exercise, or supplementation program.
-            </div>
-        </div>
-    </footer>
+<!-- ======================= MODALS ======================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="box">
+    <button class="close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
 
-    <script>
-        // Set dynamic current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Ensure CTA tracking / smooth redirection if needed
-        document.getElementById('main-cta').addEventListener('click', function() {
-            if (typeof gtag === 'function') {
-                gtag('event', 'conversion', {
-                    'send_to': 'CTA_Click'
-                });
-            }
-        });
-    </script>
-<!-- PresellPulse tracking -->
 <script>
-(function(){
-  var SITE_ID="99120fc9-ba90-44c9-9f01-90492aa24400";
-  var ENDPOINT="https://fuga-presell.lovable.app/api/public/track";
-  var SK="__pp_s_"+SITE_ID, VK="__pp_v_"+SITE_ID;
-  function uid(){try{return crypto.randomUUID();}catch(e){return String(Math.random()).slice(2)+Date.now();}}
-  function sid(){try{var r=sessionStorage.getItem(SK);if(r)return r;var s=uid();sessionStorage.setItem(SK,s);return s;}catch(e){return uid();}}
-  function vid(){try{var v=localStorage.getItem(VK);if(v)return v;var n=uid();localStorage.setItem(VK,n);return n;}catch(e){return null;}}
-  var S=sid(),V=vid(),T0=Date.now(),MAX=0;
-  var qp=new URLSearchParams(location.search);
-  function base(){return{site_id:SITE_ID,session_id:S,visitor_id:V,url:location.href,path:location.pathname,referrer:document.referrer||null,utm_source:qp.get("utm_source"),utm_medium:qp.get("utm_medium"),utm_campaign:qp.get("utm_campaign"),utm_term:qp.get("utm_term"),utm_content:qp.get("utm_content"),screen_width:window.innerWidth};}
-  function send(b){try{var p=JSON.stringify(b);if(navigator.sendBeacon){navigator.sendBeacon(ENDPOINT,new Blob([p],{type:"text/plain"}));return;}}catch(e){}try{fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(b),keepalive:true,mode:"no-cors"});}catch(e){}}
-  send(Object.assign({event_type:"pageview"},base()));
-  function upd(){var h=document.documentElement,t=window.pageYOffset||h.scrollTop,H=(h.scrollHeight||0)-window.innerHeight;if(H<=0)return;var p=Math.min(100,Math.round(t/H*100));if(p>MAX)MAX=p;}
-  window.addEventListener("scroll",upd,{passive:true});
-  document.addEventListener("click",function(e){var el=e.target;while(el&&el!==document.body){var tn=el.tagName;if(tn==="A"||tn==="BUTTON"||(el.getAttribute&&el.getAttribute("data-cta"))){var tx=(el.innerText||el.textContent||"").trim().slice(0,140);var hr=el.getAttribute&&el.getAttribute("href");var tg=el.getAttribute&&el.getAttribute("data-cta");send(Object.assign({event_type:"cta_click",cta_text:tx,cta_href:hr,cta_tag:tg},base()));return;}el=el.parentElement;}},true);
-  var sent=false;
-  function eng(){if(sent)return;sent=true;upd();send(Object.assign({event_type:"engagement",scroll_depth:MAX,time_on_page:Math.round((Date.now()-T0)/1000)},base()));}
-  document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")eng();});
-  window.addEventListener("pagehide",eng);
-})();
+  /* ---------- current year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- video simulator ---------- */
+  var player   = document.getElementById('videoPlayer');
+  var loading  = document.getElementById('loading');
+  var loadText = document.getElementById('loadingText');
+
+  player.addEventListener('click', function () {
+    loading.classList.add('on');
+    loadText.textContent = 'Preparing your video… please wait';
+    /* simulates the player buffering before opening the presentation */
+    setTimeout(function () {
+      loadText.textContent = 'Opening the presentation…';
+    }, 1600);
+  });
+
+  /* ---------- policy modals ---------- */
+  var content = {
+    privacy: {
+      title: 'Privacy Policy',
+      html: `
+        <p><em>Last updated: <span class="yr"></span></em></p>
+        <h4>1. Information we collect</h4>
+        <p>We may collect information you voluntarily provide (such as your name and email address when you contact us) and limited technical data automatically sent by your browser, including IP address, device type, browser, referring page and time of visit.</p>
+        <h4>2. How we use information</h4>
+        <p>We use this information to operate and improve this page, respond to your messages, measure the performance of our content and advertising, prevent fraud, and comply with legal obligations.</p>
+        <h4>3. Cookies and similar technologies</h4>
+        <p>This page and its partners may use cookies, pixels and similar technologies to remember preferences, measure traffic and show relevant advertising. You can block or delete cookies in your browser settings at any time.</p>
+        <h4>4. Sharing</h4>
+        <p>We do not sell your personal information. We may share it with service providers (hosting, analytics, email, payment and affiliate tracking partners) who process it on our behalf, or when required by law.</p>
+        <h4>5. Third-party links</h4>
+        <p>Clicking the video or the buttons on this page takes you to a third-party website with its own privacy practices. We are not responsible for the content or privacy policies of external sites.</p>
+        <h4>6. Data retention and security</h4>
+        <p>We keep personal data only as long as necessary for the purposes described above and apply reasonable technical and organizational measures to protect it. No method of transmission over the internet is 100% secure.</p>
+        <h4>7. Your rights</h4>
+        <p>Depending on your location, you may request access, correction, deletion, restriction or portability of your personal data, and object to certain processing. To exercise these rights, contact us using the details below.</p>
+        <h4>8. Children</h4>
+        <p>This page is not intended for anyone under 18, and we do not knowingly collect data from children.</p>
+        <h4>9. Contact</h4>
+        <p>Privacy questions: <a href="mailto:support@example.com">support@example.com</a></p>
+      `
+    },
+    terms: {
+      title: 'Terms of Use',
+      html: `
+        <p>By accessing and using this page you agree to the terms below. If you do not agree, please do not use the page.</p>
+        <h4>1. Purpose</h4>
+        <p>This page provides access to an educational video presentation and general information about blood sugar support. It is for adults aged 18 or older.</p>
+        <h4>2. No medical advice</h4>
+        <p>Nothing here constitutes medical advice, diagnosis or treatment. Always consult a qualified healthcare professional regarding your health, diet, supplements and medication.</p>
+        <h4>3. Intellectual property</h4>
+        <p>All text, layout, graphics and other content on this page are protected by copyright and may not be copied, reproduced or redistributed without prior written permission.</p>
+        <h4>4. Acceptable use</h4>
+        <p>You agree not to use this page for unlawful purposes, attempt to interfere with its operation, or scrape, republish or misrepresent its content.</p>
+        <h4>5. Limitation of liability</h4>
+        <p>This page is provided "as is" and "as available", without warranties of any kind. We are not liable for any direct or indirect damages arising from the use of, or inability to use, this page or any third-party website linked from it.</p>
+        <h4>6. Changes</h4>
+        <p>We may update these terms at any time. Continued use of the page after changes are posted means you accept the revised terms.</p>
+      `
+    },
+    disclaimer: {
+      title: 'Medical & Earnings Disclaimer',
+      html: `
+        <h4>Medical disclaimer</h4>
+        <p>The information on this page and in the video presentation is for general informational and educational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis or treatment. Statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure or prevent any disease.</p>
+        <p>Always seek the advice of a physician or other qualified health provider with any questions about a medical condition, and never disregard professional medical advice because of something you read or watched here. Never stop, change or delay prescribed medication based on this content.</p>
+        <h4>Individual results</h4>
+        <p>Results vary from person to person and depend on factors outside our control, including genetics, age, diet, lifestyle, adherence and existing health conditions. Stories or examples shown in the presentation are individual experiences and are not typical or guaranteed.</p>
+        <h4>Earnings and results disclaimer</h4>
+        <p>Any references to results of any kind are examples only. There is no guarantee that you will achieve the same or similar outcomes.</p>
+        <h4>External links</h4>
+        <p>Links on this page lead to third-party websites that are solely responsible for their own content, claims, products and policies.</p>
+      `
+    },
+    cookies: {
+      title: 'Cookie Policy',
+      html: `
+        <p>This page uses cookies and similar technologies to keep the page working correctly, to understand how visitors use it and to measure the performance of advertising campaigns.</p>
+        <h4>Types of cookies used</h4>
+        <ul>
+          <li><strong>Essential:</strong> required for basic page functions such as security and load balancing.</li>
+          <li><strong>Analytics:</strong> help us understand which sections are read most and where visitors come from.</li>
+          <li><strong>Marketing/Affiliate:</strong> allow us and our partners to track clicks from this page so that commissions and campaign results can be measured.</li>
+        </ul>
+        <h4>Managing cookies</h4>
+        <p>You can accept, block or delete cookies at any time in your browser settings. Disabling cookies may affect how parts of this page behave.</p>
+      `
+    },
+    affiliate: {
+      title: 'Affiliate Disclosure',
+      html: `
+        <p>This page contains affiliate and promotional links. If you click a link, watch the presentation and then purchase a product, the owner of this page may receive a commission or other compensation from the vendor.</p>
+        <p>This compensation supports the creation of free content and does not change the price you pay. We only promote offers we believe may be useful to our audience, but we do not manufacture, ship, bill or provide support for third-party products.</p>
+        <p>Any questions about orders, shipping, billing, refunds or product support must be directed to the vendor's own customer service using the contact details provided on their website.</p>
+      `
+    },
+    contact: {
+      title: 'Contact & Support',
+      html: `
+        <p>Questions about this page, its content or these policies? Send us a message and we'll get back to you as soon as possible.</p>
+        <h4>Email</h4>
+        <p><a href="mailto:support@example.com">support@example.com</a></p>
+        <h4>Support hours</h4>
+        <p>Monday to Friday, 9:00 AM – 6:00 PM (local business hours). Replies usually within 1–2 business days.</p>
+        <h4>Orders and refunds</h4>
+        <p>For order status, shipping, billing, refunds or product-related questions, please contact the vendor's customer service directly — their details appear on their website and in your purchase confirmation email.</p>
+      `
+    }
+  };
+
+  var modal      = document.getElementById('modal');
+  var modalBody  = document.getElementById('modalBody');
+  var modalClose = document.getElementById('modalClose');
+
+  function openModal(key){
+    var item = content[key];
+    if(!item) return;
+    modalBody.innerHTML = '<h3 id="modalTitle">' + item.title + '</h3>' + item.html;
+    modalBody.querySelectorAll('.yr').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+    modal.classList.add('on');
+    modal.querySelector('.box').scrollTop = 0;
+  }
+  function closeModal(){ modal.classList.remove('on'); }
+
+  document.querySelectorAll('[data-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(btn.getAttribute('data-modal')); });
+  });
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
 </script>
-<!-- /PresellPulse -->
+  <script defer src="https://presellfuga.lovable.app/tracker.js?site=3a8b529e-8bcb-4b25-9f94-b36b66677430"></script>
 </body>
 </html>
